@@ -147,6 +147,5 @@ public class GameScreen implements Screen {
         bucketImage.dispose();
         dropSound.dispose();
         rainMusic.dispose();
-        game.batch.dispose();
     }
 }
