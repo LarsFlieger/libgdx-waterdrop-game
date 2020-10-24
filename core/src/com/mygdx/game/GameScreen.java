@@ -76,6 +76,7 @@ public class GameScreen implements Screen {
 
         game.batch.begin();
         game.font.draw(game.batch, "Drops Collected: " + dropsGathered, 0, 480);
+        game.font.draw(game.batch, (int) Gdx.graphics.getFramesPerSecond() + "FPS", 700, 480);
         game.batch.draw(bucketImage, bucket.x, bucket.y);
         for(Rectangle raindrop: raindrops){
             game.batch.draw(dropImage, raindrop.x, raindrop.y);

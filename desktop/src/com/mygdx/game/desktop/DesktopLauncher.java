@@ -10,6 +10,9 @@ public class DesktopLauncher {
 		config.title = "Drop";
 		config.width = 800;
 		config.height = 480;
+		config.vSyncEnabled = false;
+		config.foregroundFPS = 0;
+		config.backgroundFPS = 0;
 		new LwjglApplication(new MyGdxGame(), config);
 	}
 }
